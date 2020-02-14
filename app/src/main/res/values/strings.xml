@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Story App</string>
     <string name="recipes_book">Recipes Book</string>
+    <string name="add_recipe">New Recipe</string>
 </resources>
