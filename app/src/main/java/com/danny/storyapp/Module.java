@@ -2,11 +2,12 @@ package com.danny.storyapp;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class Module {
     public String name;
-    public HashMap<String, String> ingredients;
-    public ArrayList<String> steps;
+    private HashMap<String, String> ingredients;
+    private ArrayList<String> steps;
 
     public Module(String name, HashMap<String, String> ingredients, ArrayList<String> steps){
         this.name = name;
@@ -16,5 +17,17 @@ public class Module {
     public void clear(){
         ingredients.clear();
         steps.clear();
+    }
+
+    public String getModuleName() {
+        return name;
+    }
+
+    public HashMap<String, String> getIngredients() {
+        return ingredients;
+    }
+
+    public ArrayList<String> getSteps() {
+        return steps;
     }
 }

@@ -39,8 +39,13 @@
             android:inputType="textPersonName"
             android:text="Name of module"
             android:visibility="visible" />
-
         <LinearLayout
+            android:id="@+id/ingredients_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ingredient"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -65,7 +70,14 @@
                 android:inputType="textPersonName"
                 android:text="Count"
                 android:visibility="visible" />
+            <Button
+                android:id="@+id/add_new_ingredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add"
+                android:onClick="addNewIngredientField"/>
 
+        </LinearLayout>
         </LinearLayout>
 
         <EditText
@@ -89,6 +101,12 @@
             android:layout_height="wrap_content"
             android:text="View Recipe"
             android:onClick="createRecipe"/>
+
+        <TextView
+            android:id="@+id/viewing_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"/>
 
     </LinearLayout>
 

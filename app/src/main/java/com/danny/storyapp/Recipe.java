@@ -11,4 +11,16 @@ public class Recipe {
         this.description = description;
         this.modules = modules;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public ArrayList<Module> getModules() {
+        return modules;
+    }
 }
