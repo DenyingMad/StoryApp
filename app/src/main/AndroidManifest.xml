@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/CustomTheme">
         <activity android:name=".ViewRecipe"></activity>
-        <activity android:name=".NewRecipe" />
-        <activity android:name=".AddRecipeCategory" />
+        <activity android:name=".NewRecipe.NewRecipe" />
+        <activity android:name=".NewRecipe.AddRecipeCategory" />
         <activity android:name=".RecipesBook" />
         <activity android:name=".FirstScreenSlider.MainActivity">
             <intent-filter>
